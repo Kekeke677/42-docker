@@ -1,5 +1,5 @@
 # Simple single-stage Dockerfile for Go tracker project
-FROM golang:1.21.0
+FROM golang:1.22.0
 WORKDIR /app
 COPY go.mod go.sum ./
 RUN go mod download
