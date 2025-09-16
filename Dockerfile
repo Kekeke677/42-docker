@@ -6,5 +6,4 @@ RUN go mod download
 COPY . .
 RUN go build -o tracker .
 COPY tracker.db .
-EXPOSE 8080
 CMD ["./tracker"]
